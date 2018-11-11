@@ -1,0 +1,9 @@
+name: calc_core
+version: 1.0.0
+description: >
+  A Dart implementation of a digital calculator logic for Flutter Calc Project.
+author: Frank Moreno <frankmoreno1993@gmail.com>
+homepage: https://www.github.com/kranfix/flutter_calc/tree/master/calc_core
+documentation: https://www.github.com/kranfix/flutter_calc/tree/master/calc_core#readme
+environment:
+  sdk: '>=2.0.0 <3.0.0'
