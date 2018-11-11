@@ -44,6 +44,6 @@ class Number {
     _literal = _literal.substring(0, n - 2);
   }
 
-  String get literal => _literal;
+  String get literal => _literal.length == 0 ? '0' : _literal;
   double get number => _literal.length == 0 ? 0.0 : double.parse(_literal);
 }
