@@ -45,5 +45,5 @@ class Number {
   }
 
   String get literal => _literal;
-  double get number => _literal.length == 0? 0.0 : double.parse(_literal);
+  double get number => _literal.length == 0 ? 0.0 : double.parse(_literal);
 }
