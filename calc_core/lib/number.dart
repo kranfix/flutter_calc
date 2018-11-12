@@ -6,6 +6,7 @@ final notValidDigitError = Exception("No valid Digit, use an int 0 to 9");
 final existingPointError = Exception("Number has already a point");
 final notValidActionForVoidNumber =
     Exception("Action is not valid for void Number");
+final operationNotValid = Exception("Operation not valid with void Number");
 
 class Number {
   String _literal;
@@ -46,4 +47,25 @@ class Number {
 
   String get literal => _literal.length == 0 ? '0' : _literal;
   double get number => _literal.length == 0 ? 0.0 : double.parse(_literal);
+  bool get isVoid => _literal.length == 0;
+
+  Number operator +(Number other) {
+    if (other.isVoid) throw operationNotValid;
+    return Number.fromDouble(number + other.number);
+  }
+
+  Number operator -(Number other) {
+    if (other.isVoid) throw operationNotValid;
+    return Number.fromDouble(number - other.number);
+  }
+
+  Number operator *(Number other) {
+    if (other.isVoid) throw operationNotValid;
+    return Number.fromDouble(number * other.number);
+  }
+
+  Number operator /(Number other) {
+    if (other.isVoid) throw operationNotValid;
+    return Number.fromDouble(number / other.number);
+  }
 }
