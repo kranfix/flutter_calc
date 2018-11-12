@@ -38,7 +38,7 @@ clear(Number N) {
   print('#clear(): String("${N.literal}") - double(${N.number})');
 }
 
-example01(){
+example01() {
   var N = Number();
   print('Initial value: String("${N.literal}") - double(${N.number})');
   addDigit(N, 4);
@@ -55,7 +55,7 @@ example01(){
   delDigit(N);
 }
 
-example02_sum(){
+example02_sum() {
   var N1 = Number.fromDouble(15.6);
   var N2 = Number.fromDouble(32.1);
 
@@ -74,7 +74,7 @@ example02_sum(){
   }
 }
 
-example03_sub(){
+example03_sub() {
   var N1 = Number.fromDouble(42.1);
   var N2 = Number.fromDouble(15.6);
 
@@ -93,7 +93,7 @@ example03_sub(){
   }
 }
 
-example04_prod(){
+example04_prod() {
   var N1 = Number.fromDouble(2.1);
   var N2 = Number.fromDouble(3.0);
 
@@ -112,7 +112,7 @@ example04_prod(){
   }
 }
 
-example05_div(){
+example05_div() {
   var N1 = Number.fromDouble(27.0);
   var N2 = Number.fromDouble(3.0);
 
