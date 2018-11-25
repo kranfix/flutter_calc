@@ -1,5 +1,5 @@
 name: calc_core
-version: 1.0.0
+version: 1.0.1
 description: >
   A Dart implementation of a digital calculator logic for Flutter Calc Project.
 author: Frank Moreno <frankmoreno1993@gmail.com>
